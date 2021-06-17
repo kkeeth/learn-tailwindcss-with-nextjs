@@ -1,4 +1,6 @@
 export const ResponsiveCard = () => {
+  const handleClick = () => alert('clicked!!')
+
   return (
     <div class="mt-10 py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
       <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="https://placedog.net/500/500" alt="random dog photo" />
@@ -11,7 +13,12 @@ export const ResponsiveCard = () => {
             Product Engineer
           </p>
         </div>
-        <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
+        <button
+          class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+          onClick={ handleClick }
+        >
+          Message
+        </button>
       </div>
     </div>
   )
