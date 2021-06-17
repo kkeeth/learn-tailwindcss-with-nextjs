@@ -2,6 +2,7 @@
 import 'tailwindcss/tailwind.css'
 // use any custom CSS
 // import '../styles/gloals.css'
+import '../styles/buttons.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
